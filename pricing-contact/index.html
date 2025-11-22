@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soluciones Verde — Precios y Contacto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Soluciones Verde</h1>
+      <nav class="nav">
+        <a href="#pricing" class="nav-link">Precios</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="pricing" class="pricing container">
+      <h2>Nuestros planes</h2>
+      <p class="muted">Precios simples, sin letra chica. Escoge lo que necesitas.</p>
+
+      <div class="billing-toggle">
+        <label>
+          <input type="checkbox" id="billingToggle" />
+          <span>Cobro anual (ahorra 15%)</span>
+        </label>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Basic</h3>
+          <p class="price"><span class="amount" data-monthly="9" data-yearly="92">9</span> <small>/mes</small></p>
+          <ul>
+            <li>Soporte por correo</li>
+            <li>Acceso a recursos básicos</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Basic">Elegir</button>
+        </article>
+
+        <article class="card featured">
+          <h3>Pro</h3>
+          <p class="price"><span class="amount" data-monthly="29" data-yearly="295">29</span> <small>/mes</small></p>
+          <ul>
+            <li>Soporte prioritario</li>
+            <li>Consultoría mensual</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Pro">Elegir</button>
+        </article>
+
+        <article class="card">
+          <h3>Enterprise</h3>
+          <p class="price"><span class="amount" data-monthly="99" data-yearly="990">99</span> <small>/mes</small></p>
+          <ul>
+            <li>Soluciones a medida</li>
+            <li>Integración y soporte dedicado</li>
+          </ul>
+          <button class="btn select-plan" data-plan="Enterprise">Contactar</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contacto</h2>
+      <p class="muted">Escríbenos y te responderemos en menos de 48 horas.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Nombre
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Correo electrónico
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Soluciones Verde — Precios y contacto.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
